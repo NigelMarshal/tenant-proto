@@ -2,7 +2,7 @@ import "./App.less";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout } from "antd";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Navbar, Receipts, Homepage } from "./Components";
+import { Navbar, Receipts, Homepage, AtpHeader } from "./Components";
 
 function App() {
   const { isLoading } = useAuth0();
@@ -10,16 +10,23 @@ function App() {
   if (isLoading) return <div>Loading...</div>;
   return (
     <div className="app">
-      <Navbar />
       <Layout>
-        <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route exact path="/receipts">
-            <Receipts />
-          </Route>
-        </Switch>
+        <Navbar />
+        <Layout>
+          <AtpHeader />
+          <Switch>
+            <Route exact path="/">
+              <Layout>
+                <Homepage />
+              </Layout>
+            </Route>
+            <Route exact path="/receipts">
+              <Layout>
+                <Receipts />
+              </Layout>
+            </Route>
+          </Switch>
+        </Layout>
       </Layout>
     </div>
   );
