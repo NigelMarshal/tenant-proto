@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Typography, Avatar } from "antd";
+import { Layout } from "antd";
 const Homepage = () => {
   return (
     <Layout.Content>

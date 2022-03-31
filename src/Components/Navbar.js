@@ -9,7 +9,6 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 const { Sider } = Layout;
-const { SubMenu } = Menu;
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -40,11 +39,11 @@ const Navbar = () => {
         <Menu.Item key="2" icon={<DesktopOutlined />}>
           <Link to="/receipts">Receipts</Link>
         </Menu.Item>
-        <SubMenu key="sub1" icon={<UserOutlined />} title="User">
+        <Menu.SubMenu key="sub1" icon={<UserOutlined />} title="User">
           <Menu.Item key="3">User 1</Menu.Item>
           <Menu.Item key="4">User 2</Menu.Item>
           <Menu.Item key="5">User 3</Menu.Item>
-        </SubMenu>
+        </Menu.SubMenu>
         <Menu.Item key="6" icon={<FileOutlined />}>
           Files
         </Menu.Item>

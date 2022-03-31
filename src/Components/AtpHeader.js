@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Layout, Menu, Typography, Avatar } from "antd";
-const { Header, Content, Footer, Sider } = Layout;
+import { Layout, Typography, Avatar } from "antd";
+const { Header } = Layout;
 
 const AtpHeader = () => {
   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
