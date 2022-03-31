@@ -1,6 +1,5 @@
 import React from "react";
-import { HomeOutlined } from "@ant-design/icons";
-import { Card, Layout, Row, Col } from "antd";
+import { Layout, Row, Col } from "antd";
 import UpcomingPayments from "./Widgets/UpcomingPayments";
 import MaintenanceStatus from "./Widgets/MaintenanceStatus";
 import PropertyStats from "./Widgets/PropertyStats";

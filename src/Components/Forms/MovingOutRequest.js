@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Form,
-  Select,
-  Radio,
-  Button,
-  Checkbox,
-  Typography,
-  DatePicker,
-} from "antd";
+import { Form, Radio, Button, Checkbox, Typography, DatePicker } from "antd";
 import moment from "moment";
 const formItemLayout = {
   labelCol: {

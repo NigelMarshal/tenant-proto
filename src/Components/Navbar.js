@@ -6,7 +6,6 @@ import {
   FormOutlined,
   PieChartOutlined,
   FileOutlined,
-  UserOutlined,
 } from "@ant-design/icons";
 const { Sider } = Layout;
 
@@ -48,7 +47,7 @@ const Navbar = () => {
           </Menu.Item>
         </Menu.SubMenu>
         <Menu.Item key="5" icon={<FileOutlined />}>
-          Files
+          <Link to="/documents">Documents</Link>
         </Menu.Item>
       </Menu>
     </Sider>

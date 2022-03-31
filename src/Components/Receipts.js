@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Tag, Space, Layout } from "antd";
+import { Table, Tag } from "antd";
 import moment from "moment";
 
 const Receipts = () => {
