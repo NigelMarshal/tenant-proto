@@ -40,7 +40,9 @@ const Navbar = () => {
           <Link to="/receipts">Receipts</Link>
         </Menu.Item>
         <Menu.SubMenu key="sub1" icon={<FormOutlined />} title="Requests">
-          <Menu.Item key="3">Maintenance Request</Menu.Item>
+          <Menu.Item key="3">
+            <Link to="/maintenance-request">Maintenance Request</Link>
+          </Menu.Item>
           <Menu.Item key="4">Moving out Request</Menu.Item>
         </Menu.SubMenu>
         <Menu.Item key="5" icon={<FileOutlined />}>
