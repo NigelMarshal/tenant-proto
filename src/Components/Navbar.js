@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Layout, Menu, Typography, Avatar } from "antd";
 import { HomeOutlined } from "@ant-design/icons";
 import {
-  DesktopOutlined,
+  FormOutlined,
   PieChartOutlined,
   FileOutlined,
   UserOutlined,
@@ -36,15 +36,14 @@ const Navbar = () => {
         <Menu.Item key="1" icon={<PieChartOutlined />}>
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.Item key="2" icon={<DesktopOutlined />}>
+        <Menu.Item key="2" icon={<FileOutlined />}>
           <Link to="/receipts">Receipts</Link>
         </Menu.Item>
-        <Menu.SubMenu key="sub1" icon={<UserOutlined />} title="User">
-          <Menu.Item key="3">User 1</Menu.Item>
-          <Menu.Item key="4">User 2</Menu.Item>
-          <Menu.Item key="5">User 3</Menu.Item>
+        <Menu.SubMenu key="sub1" icon={<FormOutlined />} title="Requests">
+          <Menu.Item key="3">Maintenance Request</Menu.Item>
+          <Menu.Item key="4">Moving out Request</Menu.Item>
         </Menu.SubMenu>
-        <Menu.Item key="6" icon={<FileOutlined />}>
+        <Menu.Item key="5" icon={<FileOutlined />}>
           Files
         </Menu.Item>
       </Menu>
