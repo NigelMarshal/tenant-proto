@@ -4,6 +4,7 @@ import { Card, Layout, Row, Col } from "antd";
 import UpcomingPayments from "./Widgets/UpcomingPayments";
 import MaintenanceStatus from "./Widgets/MaintenanceStatus";
 import PropertyStats from "./Widgets/PropertyStats";
+import News from "./Widgets/News";
 const Homepage = () => {
   return (
     <Layout.Content
@@ -24,6 +25,9 @@ const Homepage = () => {
           <PropertyStats />
         </Col>
       </Row>
+      <Layout.Content>
+        <News />
+      </Layout.Content>
     </Layout.Content>
   );
 };
