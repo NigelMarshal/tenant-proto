@@ -3,6 +3,7 @@ import { HomeOutlined } from "@ant-design/icons";
 import { Card, Layout, Row, Col } from "antd";
 import UpcomingPayments from "./Widgets/UpcomingPayments";
 import MaintenanceStatus from "./Widgets/MaintenanceStatus";
+import PropertyStats from "./Widgets/PropertyStats";
 const Homepage = () => {
   return (
     <Layout.Content
@@ -20,13 +21,7 @@ const Homepage = () => {
           <UpcomingPayments />
         </Col>
         <Col className="gutter-row" span={8}>
-          <Card>
-            <Card.Meta
-              avatar={<HomeOutlined />}
-              title="Card title"
-              description="This is the description"
-            />
-          </Card>
+          <PropertyStats />
         </Col>
       </Row>
     </Layout.Content>
