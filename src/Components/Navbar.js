@@ -43,7 +43,9 @@ const Navbar = () => {
           <Menu.Item key="3">
             <Link to="/maintenance-request">Maintenance Request</Link>
           </Menu.Item>
-          <Menu.Item key="4">Moving out Request</Menu.Item>
+          <Menu.Item key="4">
+            <Link to="/moving-out-request">Moving Out Request</Link>
+          </Menu.Item>
         </Menu.SubMenu>
         <Menu.Item key="5" icon={<FileOutlined />}>
           Files

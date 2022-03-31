@@ -20,15 +20,7 @@ const normFile = (e) => {
 
 const MaintenanceRequest = () => {
   return (
-    <Form
-      name="validate_other"
-      {...formItemLayout}
-      initialValues={{
-        "input-number": 3,
-        "checkbox-group": ["A", "B"],
-        rate: 3.5,
-      }}
-    >
+    <Form name="validate_other" {...formItemLayout}>
       <Form.Item>
         <Typography.Title level={1} style={{ padding: "1rem" }}>
           Submit a maintenance request
