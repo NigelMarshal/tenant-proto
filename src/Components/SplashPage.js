@@ -4,6 +4,7 @@ import { Card, Layout, Button } from "antd";
 import splashAvatar from "../assets/images/splash-avatar.jpg";
 import ParticleBackground from "./ParticleBackground";
 const SplashPage = () => {
+  //Auth0 login redirection handling
   const { isAuthenticated, loginWithRedirect } = useAuth0();
   const loginHandler = () => {
     loginWithRedirect();

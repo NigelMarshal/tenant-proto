@@ -11,6 +11,7 @@ const News = () => {
     },
   };
 
+  //Fetch news from RapidAPI to store in state and map to list items
   useEffect(() => {
     fetch(
       "https://free-news.p.rapidapi.com/v1/search?q=Dubai&lang=en&page=1&page_size=9",

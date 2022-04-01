@@ -1,8 +1,6 @@
 import React from "react";
 import { Layout, Row, Col } from "antd";
-import UpcomingPayments from "./Widgets/UpcomingPayments";
-import MaintenanceStatus from "./Widgets/MaintenanceStatus";
-import PropertyStats from "./Widgets/PropertyStats";
+import { UpcomingPayments, MaintenanceStatus, PropertyStats } from "./Widgets";
 import News from "./Widgets/News";
 const Homepage = () => {
   return (

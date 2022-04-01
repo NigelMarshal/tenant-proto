@@ -66,6 +66,7 @@ const MovingOutRequest = () => {
         name="agreement"
         valuePropName="checked"
         label="I am liable for any damage"
+        //Custom rules for checbox validation
         rules={[
           {
             validator: (_, value) =>

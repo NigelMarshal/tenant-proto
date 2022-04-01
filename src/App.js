@@ -1,6 +1,6 @@
 import "./App.less";
 import { Switch, Route } from "react-router-dom";
-import { Layout, Spin, Alert } from "antd";
+import { Layout, Spin } from "antd";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Navbar, Receipts, Homepage, AtpHeader } from "./Components";
 import MaintenanceRequest from "./Components/Forms/MaintenanceRequest";
@@ -52,6 +52,9 @@ function App() {
                 </Layout>
               </Route>
             </Switch>
+            <Layout.Footer style={{ textAlign: "center" }}>
+              [A]TP ©2022 Created by Nigel Marshal
+            </Layout.Footer>
           </Layout>
         </Layout>
       )}

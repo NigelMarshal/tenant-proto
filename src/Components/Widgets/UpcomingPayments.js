@@ -33,11 +33,8 @@ const UpcomingPayments = () => {
           April 20th 2022 ({paymentDue("2022-04-20")} days)
         </Typography.Paragraph>
         <div style={{ width: 200 }}>
-          <Progress
-            percent={75}
-            size="small"
-            format={() => "2 payments left"}
-          />
+          <Progress percent={75} size="small" />
+          <p>2 payments left</p>
         </div>
       </Card>
     </div>

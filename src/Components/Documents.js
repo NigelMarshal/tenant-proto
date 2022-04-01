@@ -20,6 +20,7 @@ const data = [
   },
 ];
 const Documents = () => {
+  //Map out dummy files with example pdfs
   return (
     <List
       itemLayout="horizontal"

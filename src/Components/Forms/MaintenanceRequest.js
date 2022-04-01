@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Select, Button, Upload, Typography } from "antd";
 import { FileImageOutlined } from "@ant-design/icons";
 const { Option } = Select;
+//Form spacing
 const formItemLayout = {
   labelCol: {
     span: 6,
@@ -11,6 +12,7 @@ const formItemLayout = {
   },
 };
 
+//Display file name on upload
 const normFile = (e) => {
   if (Array.isArray(e)) {
     return e;

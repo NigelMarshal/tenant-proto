@@ -16,6 +16,7 @@ const Navbar = () => {
     <Sider
       collapsible
       collapsed={collapsed}
+      //Toggle sidebar expansion
       onCollapse={() => setCollapsed(!collapsed)}
       style={{
         overflow: "auto",

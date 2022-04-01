@@ -3,6 +3,7 @@ import { Table, Tag } from "antd";
 import moment from "moment";
 
 const Receipts = () => {
+  //Convert to locale readable currency value
   const currencyConverter = (number) => {
     return new Intl.NumberFormat("en-AE", {
       style: "currency",
@@ -10,6 +11,7 @@ const Receipts = () => {
     }).format(number);
   };
 
+  //Convert to numeric to prevent false positives when sorting by order
   const currencyToNumber = (currencyValue) => {
     return Number(currencyValue.replace(/(^\AED|,)/g, ""));
   };
@@ -44,10 +46,11 @@ const Receipts = () => {
       filterSearch: true,
       onFilter: (value, record) => record.tags == value,
       width: "30%",
+      //Set conditional styles for tags
       render: (tags) => (
         <>
           {tags.map((tag) => {
-            let color = tag.length > 5 ? "geekblue" : "green";
+            let color = "geekblue";
             if (tag === "maintenance") {
               color = "volcano";
             }
