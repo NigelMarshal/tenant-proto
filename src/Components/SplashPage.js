@@ -20,7 +20,7 @@ const SplashPage = () => {
           cover={<img alt="example" src={splashAvatar} />}
         >
           <Button type="primary" shape="round" onClick={loginHandler}>
-            Login to your Tenant Dashboard
+            View your Tenant Dashboard
           </Button>
         </Card>
       )}

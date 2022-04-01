@@ -5,9 +5,12 @@ const MaintenanceStatus = () => {
   return (
     <div className="site-card-border-less-wrapper">
       <Card title="Maintenance Status" bordered={true}>
-        <Card.Meta avatar={<ToolOutlined />} title="Maintenance Requests" />
+        <Card.Meta
+          avatar={<ToolOutlined style={{ fontSize: "23px" }} />}
+          title="Maintenance Requests"
+        />
         <Typography.Paragraph type="success" style={{ paddingTop: "1rem" }}>
-          No pending maintenance requests
+          No Pending Maintenance Requests
         </Typography.Paragraph>
       </Card>
     </div>

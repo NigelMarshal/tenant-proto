@@ -6,6 +6,7 @@ import { Navbar, Receipts, Homepage, AtpHeader } from "./Components";
 import { MaintenanceRequest, MovingOutRequest } from "./Components/Forms";
 import Documents from "./Components/Documents";
 import SplashPage from "./Components/SplashPage";
+import NotFound from "./Components/NotFound";
 
 function App() {
   const { isLoading } = useAuth0();
@@ -50,6 +51,7 @@ function App() {
                   <Documents />
                 </Layout>
               </Route>
+              <Route component={NotFound} />
             </Switch>
             <Layout.Footer style={{ textAlign: "center" }}>
               [A]TP ©2022 Created by Nigel Marshal

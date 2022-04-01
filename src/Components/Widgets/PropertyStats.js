@@ -5,7 +5,10 @@ const PropertyStats = () => {
   return (
     <div className="site-card-border-less-wrapper">
       <Card title="About your Home " bordered={true}>
-        <Card.Meta avatar={<HomeTwoTone />} title="Property Stats" />
+        <Card.Meta
+          avatar={<HomeTwoTone style={{ fontSize: "23px" }} />}
+          title="Property Stats"
+        />
         <div className="property-stats">
           <p>Property Type: Studio</p>
           <p>Property Size: 839 sqft / 78 sqm </p>

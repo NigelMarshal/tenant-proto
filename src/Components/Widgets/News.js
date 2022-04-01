@@ -25,7 +25,10 @@ const News = () => {
   }, []);
   return (
     <>
-      <Typography.Title level={1} style={{ padding: "1rem" }}>
+      <Typography.Title
+        level={1}
+        style={{ padding: "1rem", color: "#A9A9A9", fontWeight: "700" }}
+      >
         Top News in Dubai
       </Typography.Title>
       <List

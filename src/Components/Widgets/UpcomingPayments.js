@@ -15,6 +15,7 @@ const UpcomingPayments = () => {
         bordered={true}
         actions={[
           <CalendarTwoTone
+            style={{ fontSize: "23px" }}
             key="AddToCalendar"
             onClick={() => {
               window.open("https://www.google.com/calendar/");
@@ -23,18 +24,18 @@ const UpcomingPayments = () => {
         ]}
       >
         <Card.Meta
-          avatar={<ScheduleOutlined />}
+          avatar={<ScheduleOutlined style={{ fontSize: "23px" }} />}
           title="Your next rent payment is due on:"
         />
         <Typography.Paragraph
           type="warning"
           style={{ paddingTop: "1rem", fontWeight: "500" }}
         >
-          April 20th 2022 ({paymentDue("2022-04-20")} days)
+          April 20th 2023 ({paymentDue("2023-04-20")} days away)
         </Typography.Paragraph>
         <div style={{ width: 200 }}>
-          <Progress percent={75} size="small" />
-          <p>2 payments left</p>
+          <Progress percent={85} size="small" />
+          <p>1 rent payment installment left</p>
         </div>
       </Card>
     </div>

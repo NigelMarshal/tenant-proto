@@ -35,7 +35,7 @@ const MovingOutRequest = () => {
         </Radio.Group>
       </Form.Item>
 
-      <Form.Item name="radio-group" label="Do you need moving help?">
+      <Form.Item name="radio-group" label="Do you need help moving?">
         <Radio.Group>
           <Radio value="yes-help">
             Yes (Additional fee subject to items will apply)

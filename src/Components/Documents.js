@@ -29,7 +29,7 @@ const Documents = () => {
       renderItem={(item) => (
         <List.Item>
           <List.Item.Meta
-            avatar={<FilePdfTwoTone />}
+            avatar={<FilePdfTwoTone style={{ fontSize: "23px" }} />}
             title={
               <a
                 rel="noopener noreferrer"
