@@ -1,10 +1,9 @@
-import "./App.less";
+import "./assets/css/App.less";
 import { Switch, Route } from "react-router-dom";
 import { Layout, Spin } from "antd";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Navbar, Receipts, Homepage, AtpHeader } from "./Components";
-import MaintenanceRequest from "./Components/Forms/MaintenanceRequest";
-import MovingOutRequest from "./Components/Forms/MovingOutRequest";
+import { MaintenanceRequest, MovingOutRequest } from "./Components/Forms";
 import Documents from "./Components/Documents";
 import SplashPage from "./Components/SplashPage";
 
