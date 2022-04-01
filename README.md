@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+![What is this](https://i.imgur.com/nuh6NCk.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tenant Dashboard Prototype
 
-## Available Scripts
+This is my envisioning/POC of what I imagine would have helped me in my early days of being a fresh tenant in the big brave MENA property world. I created a dashboard that is accessible by tenants, which shows important information related to the property and related requests. The dashboard gives an overview of what rent payments are due, the status of any maintenance requests and information of the property itself which one can quickly use to refer to for any documentation. The dashboard also displays the latest news in the region with pagination. Other pages includes request forms for work orders and moving out, filterable/sortable Receipt history and a Document page acting as a storage for important documents.
 
-In the project directory, you can run:
+## Technologies used:
 
-### `npm start`
+- ReactJS bootstrapped with CRA
+- Ant Design (Makes it easier to scale enterprise level apps)
+- React Router
+- Auth0 for Login authentication
+- Moment for currency and date calculations
+- Ant Design Icons
+- Particle JS...for some fancy animations on the splash screen
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Give me more details!
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+On launch a splash screen will be displayed (prettified with Particle js) which will then redirect the user to the route I've set up that's authenticated with Auth0. User's can sign up/login with gmail or email and then be directed to the dashboard. 
 
-### `npm run build`
+Built with React and Ant Design, tenants can navigate through the UI to see info on their past payments(and even upcoming), maintenance requests status and so on. I've used react router for page routing and emulated real life behavior as much as possible thanks to the ant design component library. Forms can be interacted with and validation rules are applied for the various input fields. The receipt history table can be filtered/sorted so that tenants can keep track of their categorized expenses with ease.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![How to use](https://i.imgur.com/mn2lQS3.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to get this up and running on my machine?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Just clone this repo
 
-### `npm run eject`
+`cd` into the cloned folder
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+run `npm install` to install the necessary packages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+and then run `npm start` to boot up local server which will load the splash screen
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+And you're all ready to go!
