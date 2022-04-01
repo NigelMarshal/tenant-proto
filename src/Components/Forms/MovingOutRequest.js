@@ -28,17 +28,19 @@ const MovingOutRequest = () => {
         ]}
       >
         <Radio.Group>
-          <Radio value="a">I will hire a painter</Radio>
-          <Radio value="b">I will pay the additional re-painting fee</Radio>
+          <Radio value="yes-paint">I will hire a painter</Radio>
+          <Radio value="no-paint">
+            I will pay the additional re-painting fee
+          </Radio>
         </Radio.Group>
       </Form.Item>
 
       <Form.Item name="radio-group" label="Do you need moving help?">
         <Radio.Group>
-          <Radio value="a">
+          <Radio value="yes-help">
             Yes (Additional fee subject to items will apply)
           </Radio>
-          <Radio value="b">No</Radio>
+          <Radio value="no-help">No</Radio>
         </Radio.Group>
       </Form.Item>
 
@@ -73,7 +75,10 @@ const MovingOutRequest = () => {
           },
         ]}
       >
-        <Checkbox>I understand.</Checkbox>
+        <Checkbox>
+          I understand I am responsible for any property damage and will be
+          charged
+        </Checkbox>
       </Form.Item>
 
       <Form.Item
