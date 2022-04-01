@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Select, Button, Upload, Typography } from "antd";
+import { Form, Select, Button, Upload, Typography, message } from "antd";
 import { FileImageOutlined } from "@ant-design/icons";
 const { Option } = Select;
 //Form spacing
@@ -9,6 +9,22 @@ const formItemLayout = {
   },
   wrapperCol: {
     span: 14,
+  },
+};
+
+//Mock upload action
+const uploadProps = {
+  name: "file",
+  action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
+  headers: {
+    authorization: "authorization-text",
+  },
+  onChange(info) {
+    if (info.file.status === "done") {
+      message.success(`${info.file.name} file uploaded successfully`);
+    } else if (info.file.status === "error") {
+      message.error(`${info.file.name} file upload failed.`);
+    }
   },
 };
 
@@ -55,7 +71,7 @@ const MaintenanceRequest = () => {
           getValueFromEvent={normFile}
           noStyle
         >
-          <Upload.Dragger name="files" action="/upload.do">
+          <Upload.Dragger name="files" {...uploadProps}>
             <p className="ant-upload-drag-icon">
               <FileImageOutlined />
             </p>
