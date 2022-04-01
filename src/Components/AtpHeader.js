@@ -6,7 +6,7 @@ const { Header } = Layout;
 const AtpHeader = () => {
   const { user, logout } = useAuth0();
   const logoutHandler = () => {
-    logout();
+    logout({ returnTo: window.location.origin });
   };
   return (
     <Header className="header">
