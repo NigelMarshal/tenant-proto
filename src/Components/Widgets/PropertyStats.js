@@ -6,7 +6,7 @@ const PropertyStats = () => {
     <div className="site-card-border-less-wrapper">
       <Card title="About your Home " bordered={true}>
         <Card.Meta avatar={<HomeTwoTone />} title="Property Stats" />
-        <div style={{ paddingTop: "1rem" }}>
+        <div className="property-stats">
           <p>Property Type: Studio</p>
           <p>Property Size: 839 sqft / 78 sqm </p>
           <p>Location: JLT, Cluster Z</p>

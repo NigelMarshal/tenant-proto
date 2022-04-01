@@ -93,7 +93,9 @@ const Receipts = () => {
     },
   ];
 
-  return <Table columns={columns} dataSource={data} />;
+  return (
+    <Table columns={columns} dataSource={data} style={{ padding: "1rem" }} />
+  );
 };
 
 export default Receipts;

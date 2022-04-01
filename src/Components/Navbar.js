@@ -26,7 +26,7 @@ const Navbar = () => {
       }}
     >
       <div className="logo-container">
-        <Avatar src={<HomeOutlined />} size="large" />
+        <Avatar src={<HomeOutlined style={{ fontSize: "23px" }} />} />
         <Typography.Title level={3} className="logo">
           <Link to="/">ATP</Link>
         </Typography.Title>

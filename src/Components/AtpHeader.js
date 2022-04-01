@@ -1,27 +1,32 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Layout, Typography, Avatar } from "antd";
+import { Layout, Typography, Avatar, Button } from "antd";
 const { Header } = Layout;
 
 const AtpHeader = () => {
-  const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
-  const loginHandler = () => {
-    loginWithRedirect();
-  };
+  const { user, isAuthenticated, logout } = useAuth0();
   const logoutHandler = () => {
     logout();
   };
   return (
     <Header className="header">
       {isAuthenticated && (
-        <Typography.Title level={1}>Hello, {user.name}!</Typography.Title>
+        <Typography.Title
+          style={{ color: "white", padding: "0 1rem" }}
+          level={3}
+        >
+          Hello, {user.name}!
+        </Typography.Title>
       )}
       {isAuthenticated && (
         <Avatar style={{ float: "right" }} src={user.picture} size="large" />
       )}
-      <div>
-        {!isAuthenticated && <button onClick={loginHandler}>Login</button>}
-        {isAuthenticated && <button onClick={logoutHandler}>Logout</button>}
+      <div className="log-action-container">
+        {isAuthenticated && (
+          <Button type="primary" onClick={logoutHandler}>
+            Logout
+          </Button>
+        )}
       </div>
     </Header>
   );
